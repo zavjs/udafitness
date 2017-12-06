@@ -18,12 +18,6 @@ export default class App extends React.Component {
     return (
       <View>
         <AddEntry />
-        <TouchableHighlight 
-          style={styles.btn} 
-          underlayColor='#d4271b'
-          onPress={this.handlePress}>
-          <Text style={styles.btnText}>Touchable Highlight</Text>
-        </TouchableHighlight>
       </View>
     );
   }
