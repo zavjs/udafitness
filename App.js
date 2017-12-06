@@ -24,12 +24,6 @@ export default class App extends React.Component {
           onPress={this.handlePress}>
           <Text style={styles.btnText}>Touchable Highlight</Text>
         </TouchableHighlight>
-
-        <TouchableWithoutFeedback>
-          <View style={styles.btn}>
-            <Text style={styles.btnText}>Touchable Highlight</Text>
-          </View>
-        </TouchableWithoutFeedback>
       </View>
     );
   }
