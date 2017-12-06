@@ -5,13 +5,18 @@ import { FontAwesome, Entypo } from '@expo/vector-icons';
 export default function UdaciSteppers ({ max, unit, value, onIncrement, onDecrement }) {
     return (
         <View>
-            <TouchableOpacity style={styles.btn} onPress={onIncrement}>
-                <Text>+</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.btn} onPress={onDecrement}>
-                <Text>-</Text>
-            </TouchableOpacity>
-            <Text>UdaciSteppers {value} {unit}</Text>
+            <View>
+                <TouchableOpacity style={styles.btn} onPress={onIncrement}>
+                    <FontAwesome name='plus' size={30} color='black' />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.btn} onPress={onDecrement}>
+                    <FontAwesome name='minus' size={30} color='black' />
+                </TouchableOpacity>
+            </View>
+            <View>
+                <Text>{value}</Text>
+                <Text>{unit}</Text>
+            </View> 
         </View>
     );
 }
